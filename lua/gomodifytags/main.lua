@@ -1,5 +1,4 @@
 local api, fn = vim.api, vim.fn
-local ts_utils = require 'nvim-treesitter.ts_utils'
 local config = require("gomodifytags.config")
 
 local M = {}
@@ -196,7 +195,7 @@ end
 
 ---@return string|nil
 function M.getStructNameUnderCursor()
-  local node = ts_utils.get_node_at_cursor(0)
+  local node = vim.treesitter.get_node()
 
   if not node then
     return nil
