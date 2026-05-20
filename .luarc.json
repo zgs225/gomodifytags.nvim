@@ -1,0 +1,16 @@
+{
+  "Lua": {
+    "diagnostics": {
+      "globals": ["vim"]
+    },
+    "workspace": {
+      "library": [
+        "/opt/nvim/share/nvim/runtime/lua",
+        "/opt/nvim/share/nvim/runtime/lua/vim/lsp",
+        "./lua/"
+      ],
+      "maxPreload": 100000,
+      "preloadFileSize": 100000
+    }
+  }
+}
